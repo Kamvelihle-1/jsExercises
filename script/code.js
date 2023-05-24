@@ -1,4 +1,4 @@
-//Answers
+//Answers Q1
 /*
  >Variable : A variable is a container that can hold different values and be used in a program to store and manipulate data, and can only be accessed using the name they are given during declaration.
 
@@ -20,7 +20,28 @@
  How to create a function called fullName that returns your full name and displays it
 on the console.
 
-function fullName(fName){
+function fullName(){
+    let fName="Kamvelihle Sikalana";
     console.log(fName);
+    return fName;
 }
 */ 
+
+// Answer Q2
+
+let student={
+    firstName:"Mamboyi",
+    lastName:"Bhokhwe",
+    age: 43,
+    subjects:["Maths","IT","Physics"]
+}
+let address={
+    streetName:"Imam Haron Rd",
+    streetNum:"1274",
+    suburb: "Lansdowne",
+    city: "Cape Town",
+    country:"South Africa"
+}
+console.log(student);
+console.log( address);
+
