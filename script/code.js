@@ -29,19 +29,46 @@ function fullName(){
 
 // Answer Q2
 
-let student={
-    firstName:"Mamboyi",
-    lastName:"Bhokhwe",
-    age: 43,
-    subjects:["Maths","IT","Physics"]
-}
-let address={
-    streetName:"Imam Haron Rd",
-    streetNum:"1274",
-    suburb: "Lansdowne",
-    city: "Cape Town",
-    country:"South Africa"
-}
-console.log(student);
-console.log( address);
+// let student={
+//     firstName:"Mamboyi",
+//     lastName:"Bhokhwe",
+//     age: 43,
+//     subjects:["Maths","IT","Physics"]
+// }
+// let address={
+//     streetName:"Imam Haron Rd",
+//     streetNum:"1274",
+//     suburb: "Lansdowne",
+//     city: "Cape Town",
+//     country:"South Africa"
+// }
+// console.log(student);
+// console.log( address);
 
+let num1=document.querySelector('#number1')
+let num2=document.querySelector('#number2')
+let op=document.querySelector('#operator') 
+let result=document.querySelector('#lblResult')
+
+function calculate() {
+    
+    if (op.value =="+") {
+        
+     result.innerText= 'Result : ' + eval(num1.value +op.value+ num2.value)
+            
+           
+    }else if (op.value =="-") {
+            result.innerText='Result : ' + eval(num1.value - num2.value)
+                
+    }else if (op.value =="/") {
+        
+            result.innerText='Result : ' + eval(num1.value/num2.value).toFixed(2)
+            
+    }else if (op.value =="*") {
+        
+            result.innerText='Result : ' + eval(num1.value*num2.value)
+            
+    }
+    
+    
+}
