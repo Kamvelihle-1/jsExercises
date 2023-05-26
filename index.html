@@ -8,41 +8,44 @@
     <title>JS Exercises</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            
-                <div class="row">
-                    
-                        <label for="number1">Number 1 : </label>
-                        <input type="text"name="number1" id="number1">
-                    
-                </div>
-                <div class="row">
-                    
-                        <label for="operator">Operator : </label>
-                        <input type="text" name="operator" id="operator">
-                    
-                </div>
-                <div class="row">
-                    
-                        <label for="number2">Number 2 : </label>
-                        <input type="text" name="number2" id="number2">
-                    
-                </div>
-                <div class="row">
-            
-                    <label for="lblResult" id="lblResult" name="lblResult">Result: </label>
-               
-                </div>
-                <div class="row">
+    <main>
+        <div class="container">
 
-                        <button onclick="calculate()" id="btnResult">Display</button>
+            <div class="row">
+
+                    <div class="row">
+
+                            <label for="number1">Number 1 : </label>
+                            <input type="text"name="number1" onkeyup="valid('#number1')" id="number1">
+
+                    </div>
+                    <div class="row">
+
+                            <label for="operator">Operator : </label>
+                            <input type="text" name="operator" id="operator">
+
+                    </div>
+                    <div class="row">
+
+                            <label for="number2">Number 2 : </label>
+                            <input type="text" name="number2" onkeyup="valid('#number2')"id="number2">
+
+                    </div>
+                    <div class="row">
+                    
+                        <label for="lblResult" id="lblResult" name="lblResult">Result: </label>
+                    
+                    </div>
+                    <div class="row">
+
+                            <button onclick="calculate()" id="btnResult">Display</button>
+                    
+                    </div>
                 
-                </div>
-            
+            </div>
+
         </div>
-        
-    </div>
+    </main>
     <!--JS  -->
     <script src="./script/code.js"></script>
 </body>

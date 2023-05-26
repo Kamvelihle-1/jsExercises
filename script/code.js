@@ -45,30 +45,51 @@ function fullName(){
 // console.log(student);
 // console.log( address);
 
+//Answer of Q3
 let num1=document.querySelector('#number1')
 let num2=document.querySelector('#number2')
 let op=document.querySelector('#operator') 
 let result=document.querySelector('#lblResult')
 
+
 function calculate() {
-    
-    if (op.value =="+") {
+   
+   if (op.value =="+") {
         
-     result.innerText= 'Result : ' + eval(num1.value +op.value+ num2.value)
-            
-           
+        result.innerText= 'Result : ' + eval(num1.value +op.value+ num2.value)
+                  
     }else if (op.value =="-") {
-            result.innerText='Result : ' + eval(num1.value - num2.value)
+        result.innerText='Result : ' + eval(num1.value - num2.value)
                 
     }else if (op.value =="/") {
         
-            result.innerText='Result : ' + eval(num1.value/num2.value).toFixed(2)
+        result.innerText='Result : ' + eval(num1.value/num2.value).toFixed(2)
             
     }else if (op.value =="*") {
         
-            result.innerText='Result : ' + eval(num1.value*num2.value)
+        result.innerText='Result : ' + eval(num1.value*num2.value)
             
+    }else if (op.value =="^") {
+        
+        result.innerText='Result : ' + eval(Math.pow( num1.value,num2.value))
+        
+    }  
+    
+}
+
+function valid(x) {
+    switch (true) {
+        case document.querySelector(x).value.length ==0 :
+            alert('Please enter a number');
+            document.querySelector(x).value=" ";
+            break;
+        case isNaN(document.querySelector(x).value):
+            alert('Please enter a number');
+            document.querySelector(x).value=" ";
+            break;
+        case document.querySelector(x).value.length ==0 :
+            alert('Please enter an operator');
+            document.querySelector(x).value=" ";
+            break;
     }
-    
-    
 }

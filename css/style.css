@@ -5,12 +5,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    width: 1005;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
 
 .container{
-    min-width: fit-content;
+    width: fit-content;
     padding: 3rem;
-    margin: 15rem;
-    display: inline-flex;
+    margin: 15rem 15rem;
+    display: flexbox;
+    flex-direction: column;
     background-color: blanchedalmond;
     justify-content: center;
     align-items: center;
