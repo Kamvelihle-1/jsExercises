@@ -104,23 +104,54 @@ function fullName(){
 
 
 //Answer Q5
-let people=[person1={
-    Name: "John",
-    dob:new Date("1973-04-15")
-},
- person2={
-    Name: "Marko",
-    dob: new Date("1988-01-26")
-}
-]
-//Current date
-let bdy=new Date()
-//Birthdays next year
-let nextBday1=new Date("2024-04-15")
-let nextBday2=new Date("2024-01-26")
-//Difference in days
-let dif1 =Math.floor((nextBday1.getTime()-bdy.getTime())/(1000 * 60 * 60 * 24))
-let dif2 = Math.floor((nextBday2.getTime()-bdy.getTime())/(1000 * 60 * 60 * 24))
-//Display
-console.log(`${people[0].Name }'s age is ${eval(2023-people[0].dob.getFullYear())} days until next birthday ${dif1}`);
-console.log(`${people[1].Name }'s age is ${eval(2023-people[1].dob.getFullYear())} days until next birthday ${dif2}`);
+// let people=[person1={
+//     Name: "John",
+//     dob:new Date("1973-04-15")
+// },
+//  person2={
+//     Name: "Marko",
+//     dob: new Date("1988-01-26")
+// }
+// ]
+// //Current date
+// let bdy=new Date()
+// //Birthdays next year
+// let nextBday1=new Date("2024-04-15")
+// let nextBday2=new Date("2024-01-26")
+// //Difference in days
+// let dif1 =Math.floor((nextBday1.getTime()-bdy.getTime())/(1000 * 60 * 60 * 24))
+// let dif2 = Math.floor((nextBday2.getTime()-bdy.getTime())/(1000 * 60 * 60 * 24))
+// //Display
+// console.log(`${people[0].Name }'s age is ${eval(2023-people[0].dob.getFullYear())} days until next birthday ${dif1}`);
+// console.log(`${people[1].Name }'s age is ${eval(2023-people[1].dob.getFullYear())} days until next birthday ${dif2}`);
+
+//Answer Q6
+let marks=prompt("Enter your marks in % : ")
+switch (true) {
+    case marks=="100":
+        console.log(`${marks}: You're amazing`);
+        break;
+
+    case marks>="90" && marks<="99":
+        console.log(`${marks}: Well done`);
+        break;
+
+    case marks>="80" && marks<="89":
+        console.log(`${marks}: Way to go`);
+        break;
+
+    case marks>="75" && marks<="79":
+        console.log(`${marks}:Keep it up`);
+        break;
+    case marks>="60" && marks<="74":
+            console.log(`${marks}: You did good`);
+            break;
+    
+    case marks>="50" && marks<="59":
+            console.log(`${marks}: That was good`);
+            break; 
+    case marks<"50":
+        console.log(`${marks}: You failed`);
+        break;
+
+}   
